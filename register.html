@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>McHacks Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="McHacks 2017" />
+        <meta property="og:url" content="https://mchacks.io" />
+        <meta property="og:description" content="Canada's most exciting hackathon brought to you by McGill University! " />
+        <!-- <meta property="og:description" content="Canada's most exciting hackathon brought to you by McGill University! Registration is now open, hurry up and secure your> spot!" /> -->
+        <meta property="og:image" content="images/red_bird.png" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    </head>
+
+    <body>
+
+            <div class="bird-reg" id="birdbox">
+                <img id="bird_logo" src="images/logo__grey__720.png" alt="Imagine a bird here">
+            </div> 
+
+        <div id="app-header">
+            <h1>Apply to McHacks</h1>
+            <p><span id="required">*</span> indicates a required field</p>
+        </div>
+
+        <div id="application">
+            <form id="mcform" action='https://www.getform.org/u/e46521cb-df62-41e8-b7ce-7d741f612a34' enctype="multipart/form-data" method="POST">
+                <section>
+                    <ul>
+                        <li>
+                            <input type="text" name="first_name" required>
+                            <label for="first_name">First Name <span id="required">*</span></label> 
+                        </li>
+                        <li>
+                            <input type="text" name="last_name" required>
+                            <label for="last_name">Last Name <span id="required">*</span></label>
+                        </li>
+                        <li>
+                            <input type="email" name="email" required> 
+                            <label for="email">Email Address <span id="required">*</span></label>
+                        </li>
+                    </ul>
+
+                    <br style="clear:both;" />
+                </section>
+
+<!--                 <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="dropdown" name="gender"> 
+
+                    <label for="race">Race</label>
+                    <input type="dropdown" name="race">
+                </div> -->
+
+                <section>
+                    <ul>
+                        <li>
+                            <input id="schoolField" type="text" name="school" placeholder="Enter your school and its location" required>
+                            <label for="school">School <span id="required">*</span></label>
+                        </li>
+                        <li>
+                            <input type="text" name="major">
+                            <label for="major">Major</label>  
+                        </li>
+                        <li>
+                            <input type="text" name="first_name" required>
+                            <label for="first_name">Graduation Year <span id="required">*</span></label>
+                        </li>
+                    </ul>
+
+                    <br style="clear:both;" />
+
+                </section>
+
+                <section>
+                    <ul>
+                        <li>
+                            <input id="travelField" type="text" name="school" placeholder="Enter your travel origin" required>
+                            <label for="school">Travelling from a different location than school?</label>
+                        </li>
+                        <li>
+                            <input type="text" name="major">
+                            <label for="major">T-Shirt Size</label>  
+                        </li>
+                        <li>
+                            <input type="text" name="first_name" required>
+                            <label for="first_name">Allergies</label>
+                        </li>
+                    </ul>
+
+                    <br style="clear:both;" />
+
+                </section>
+
+                <section>
+                    <ul>
+                        <li>
+                            <input type="url" name="site">
+                            <label for="site">Personal Webpage</label>
+                        </li>
+                        <li>
+                            <input id="fupload" type="file" accept=".pdf" name="file">
+                            <label for="file">Resume (PDF)</label>
+                        </li>
+                    </ul>
+
+                    <br style="clear:both;" />
+
+                </section>
+
+                <section>
+                    <ul>
+                        <li>
+                            <textarea id="reason" name="reason" form="mcform" maxlength="140"></textarea>
+                            <label for="reason">Why McHacks? (max 140 chars) <span id="required">*</span></label>
+                        </li>
+                    </ul>
+
+                    <br style="clear:both;" />
+                </section>
+
+
+                <section>
+                    <ul style="border: none">
+                        <li>
+                        <button id="submit-app" type="submit">Submit My Application</button>
+                        </li>
+                    </ul>
+                </section>
+
+            </form>
+
+
+
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <script src="js/jquery.fittext.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/embed.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.0.1/trianglify.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH7XVYKV9J5P0O6M-T_NJJ2AJjDbm9Dz4&libraries=places"
+    async defer></script>
+
+    <script>
+    function initialize() {
+        var input = document.getElementById('schoolField');
+        var options = {
+          types: ["establishment"]
+        };
+        var autocomplete = new google.maps.places.Autocomplete(input, options);
+
+        var travel = document.getElementById('travelField');
+        var toptions = {
+          types: [('city')]
+        };
+        var autocomplete = new google.maps.places.Autocomplete(travel, toptions);
+
+    }
+    window.onload = initialize;
+    </script>
+
+    <script>
+
+        //var dimensions = target.getClientRects()[0];
+        var pattern = Trianglify({
+            x_colors: ['#58445C', '#8B013D', '#972E4C', '#DA7E6F', '#FAE4E4', '#FAE4E4', '#DB7871', '#85013A', '#844556', '#423843'],
+            y_colors: 'match_x',
+            cell_size: 130,
+            variance: 1,
+            width: window.innerWidth, 
+            height: window.innerHeight
+        });
+        document.body.style['background-image'] = 'url(' + pattern.png() + ')';
+
+        // var page1 = document.getElementById('page1');
+        // var dimensions = page1.getClientRects()[0];
+
+        // var pattern = Trianglify({
+        //     x_colors: ['#58445C', '#8B013D', '#972E4C', '#DA7E6F', '#E87879', '#DB7871', '#85013A', '#844556', '#423843'],
+        //     y_colors: 'match_x',
+        //     cell_size: 130,
+        //     variance: 1,
+        //     width: dimensions.width,
+        //     height: dimensions.height,
+        // });
+
+        // page1.appendChild(pattern.canvas());
+
+
+        // var t = new Trianglify({
+        //     x_colors: ['#58445C', '#8B013D', '#972E4C', '#DA7E6F', '#E87879', '#DB7871', '#85013A', '#844556', '#423843'],
+        //     y_colors: 'match_x',
+        //     noiseIntensity: 0,
+        //     cellsize: 130});
+        // var pattern = t.generate(document.getElementById("page1").clientWidth, document.getElementById("page1").clientHeight);
+        // document.getElementById("page1").appendChild(pattern.canvas());
+        // document.getElementById("page1").setAttribute('style', 'background-image: '+pattern.dataUrl);
+    </script>
+
+</html>

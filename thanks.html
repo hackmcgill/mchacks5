@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Thanks for Applying to McHacks!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="McHacks 2017" />
+        <meta property="og:url" content="https://mchacks.io" />
+        <meta property="og:description" content="Canada's most exciting hackathon brought to you by McGill University! " />
+        <!-- <meta property="og:description" content="Canada's most exciting hackathon brought to you by McGill University! Registration is now open, hurry up and secure your> spot!" /> -->
+        <meta property="og:image" content="images/red_bird.png" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    </head>
+
+    <body>
+
+            <a href="index.html">
+                <div class="bird-reg" id="birdbox">
+                    <img id="bird_logo" src="images/logo__grey__720.png" alt="Imagine a bird here">
+                </div> 
+            </a>
+
+        <div id="thanks_container">
+
+            <div id="thanks">
+                <h1>Thanks for applying to McHacks!</h1>
+                <h3>Your application has been received.<br>We hope to see you on Saturday, January 28, 2017.</h3>
+                <h3>Monitor your email in the coming weeks to see if you have been accepted.
+                <br>Meanwhile, if you have any questions, don't hesitate to drop us a line at <a href="mailto:contact@mchacks.io">contact@mchacks.io</a></h3>
+
+            </div>
+
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <script src="js/jquery.fittext.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/embed.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.0.1/trianglify.min.js"></script>
+
+    <script>
+
+        //var dimensions = target.getClientRects()[0];
+        var pattern = Trianglify({
+            x_colors: ['#58445C', '#8B013D', '#972E4C', '#DA7E6F', '#FAE4E4', '#FAE4E4', '#DB7871', '#85013A', '#844556', '#423843'],
+            y_colors: 'match_x',
+            cell_size: 130,
+            variance: 1,
+            width: window.innerWidth, 
+            height: window.innerHeight
+        });
+        document.body.style['background-image'] = 'url(' + pattern.png() + ')';
+
+        // var page1 = document.getElementById('page1');
+        // var dimensions = page1.getClientRects()[0];
+
+        // var pattern = Trianglify({
+        //     x_colors: ['#58445C', '#8B013D', '#972E4C', '#DA7E6F', '#E87879', '#DB7871', '#85013A', '#844556', '#423843'],
+        //     y_colors: 'match_x',
+        //     cell_size: 130,
+        //     variance: 1,
+        //     width: dimensions.width,
+        //     height: dimensions.height,
+        // });
+
+        // page1.appendChild(pattern.canvas());
+
+
+        // var t = new Trianglify({
+        //     x_colors: ['#58445C', '#8B013D', '#972E4C', '#DA7E6F', '#E87879', '#DB7871', '#85013A', '#844556', '#423843'],
+        //     y_colors: 'match_x',
+        //     noiseIntensity: 0,
+        //     cellsize: 130});
+        // var pattern = t.generate(document.getElementById("page1").clientWidth, document.getElementById("page1").clientHeight);
+        // document.getElementById("page1").appendChild(pattern.canvas());
+        // document.getElementById("page1").setAttribute('style', 'background-image: '+pattern.dataUrl);
+    </script>
+
+</html>
