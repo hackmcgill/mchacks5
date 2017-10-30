@@ -1411,24 +1411,24 @@ h1, h2, h3, h4, h5, h6 {
   margin:10px; 
   padding:10px; 
 }
-.platinum {
+/* .platinum {
   max-height: 100%;
   max-width: 100%;
 }
 .gold {
-  max-height: 80%;
-  max-width: 80%;
+  max-height: 90%;
+  max-width: 90%;
 }
 .silver {
+  max-height: 70%;
+  max-width: 70%;
+}
+.bronze {
   max-height: 60%;
   max-width: 60%;
 }
-.bronze {
-  max-height: 40%;
-  max-width: 40%;
-}
 .startup {
-  max-height: 20%;
-  max-width: 20%;
-}
+  max-height: 50%;
+  max-width: 50%;
+} */
 /*# sourceMappingURL=style.css.map */
