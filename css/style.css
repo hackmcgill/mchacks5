@@ -1411,4 +1411,24 @@ h1, h2, h3, h4, h5, h6 {
   margin:10px; 
   padding:10px; 
 }
+.platinum {
+  max-height: 100%;
+  max-width: 100%;
+}
+.gold {
+  max-height: 80%;
+  max-width: 80%;
+}
+.silver {
+  max-height: 60%;
+  max-width: 60%;
+}
+.bronze {
+  max-height: 40%;
+  max-width: 40%;
+}
+.startup {
+  max-height: 20%;
+  max-width: 20%;
+}
 /*# sourceMappingURL=style.css.map */
