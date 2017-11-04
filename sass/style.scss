@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
 				// text-transform: uppercase;
 				font-size: 19px;
 				font-weight: 300;
-				// @include transition(.5s);
+				@include transition(.5s);
 				span {
 					position: relative;
 					display: block;
