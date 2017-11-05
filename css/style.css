@@ -742,10 +742,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 #fh5co-counters .section-heading h2 {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 #fh5co-counters .section-heading h2:after {
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgb(0, 0, 0) !important;
 }
 #fh5co-counters .section-heading .subtext h3 {
   color: rgba(255, 255, 255, 0.7) !important;
