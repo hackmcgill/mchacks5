@@ -1411,27 +1411,36 @@ h1, h2, h3, h4, h5, h6 {
   padding:10px; 
 }
 .platinum {
-  max-height: 100%;
-  max-width: 100%;
+  flex-basis: auto;
+  align-self: center;
 }
 .gold {
-  max-height: 80%;
-  max-width: 80%;
+  flex-basis: auto;
+  align-self: center;
 }
 .silver {
-  max-height: 60%;
-  max-width: 60%;
+  flex-basis: auto;
+  align-self: center;
 }
 .bronze {
-  max-height: 40%;
-  max-width: 40%;
+  flex-basis: auto;
+  align-self: center;
 }
 .startup {
-  max-height: 20%;
-  max-width: 20%;
+  flex-basis: auto;
+  align-self: center;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .center{
- align-self: center
+  align-self: center
 }
 .triangles {
   position: absolute;
