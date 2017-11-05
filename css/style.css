@@ -1447,6 +1447,22 @@ h1, h2, h3, h4, h5, h6 {
 .center{
   align-self: center
 }
+
+.three-flex-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.three-flex-child {
+  flex-basis: 30%;
+  align-self: center;
+  padding: 2%;
+  text-align: center;
+}
+
 /* .triangles {
   position: absolute;
   width: auto;
