@@ -1217,7 +1217,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -20px;
   left: 50%;
   margin-left: -40px;
-  background: #fff;
+  background: #e1e1e1;
   z-index: 8;
   width: 80px;
   height: 80px;
@@ -1408,45 +1408,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 .classWithPad { 
   margin:10px; 
-  padding:10px; 
+  margin:10px; 
 }
 .platinum {
-  flex-basis: auto;
+  flex-basis: 45%;
   align-self: center;
+  padding: 2.5%;
 }
 .gold {
-  flex-basis: auto;
+  flex-basis: 30%;
   align-self: center;
+  padding: 2%;
 }
 .silver {
-  flex-basis: auto;
+  flex-basis: 20%;
   align-self: center;
+  margin: 2%;
 }
 .bronze {
-  flex-basis: auto;
+  flex-basis: 15%;
   align-self: center;
+  margin: 2%;
 }
 .startup {
-  flex-basis: auto;
+  flex-basis: 10%;
   align-self: center;
+  margin: 2%;
 }
 
 .sponsor {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 .center{
   align-self: center
 }
-.triangles {
+/* .triangles {
   position: absolute;
   width: auto;
   height: auto;
-}
+} */
 
 
   
