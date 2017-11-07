@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: #636363;
   position: relative;
   font-size: 19px;
   font-weight: 300;
@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header #navbar li.active a {
   background: transparent;
   background: none;
-  color: #fff;
+  color: #636363;
 }
 #fh5co-header #navbar li.active a span:before {
   visibility: visible;
@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-weight: 700;
   padding-left: 0;
-  color: #fff;
+  color: #636363;
 }
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
@@ -394,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
   /* background-image: -webkit-repeating-linear-gradient(top left, #636363 0%, #636363 100%); */
   /* IE10+ */
   /* background-image: repeating-linear-gradient(to bottom right, #636363 0%, #636363 100%); */
-  /* background-image: -ms-repeating-linear-gradient(top left, #636363 0%, #636363 100%); */ */
+  /* background-image: -ms-repeating-linear-gradient(top left, #636363 0%, #636363 100%); */ 
 }
 #fh5co-home, #fh5co-home .text-wrap {
   height: 900px;
