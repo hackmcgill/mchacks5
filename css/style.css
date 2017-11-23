@@ -1253,17 +1253,17 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #636363;
+  background: #f07c74;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #636363;
+  background: #f9b3ad;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background: #393e46 !important;
+  background:#f9b3ad  !important;
   color: #fff;
   outline: none !important;
 }
@@ -1466,6 +1466,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mlh-trust-badge {
   padding: 1.75%;
+}
+.btn-xl {
+  padding: 10px 20px;
+  font-size: 40px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
