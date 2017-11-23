@@ -67,9 +67,7 @@
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
 					<!-- Mobile Toggle Menu Button -->
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					    aria-controls="navbar">
-					</a>
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 					<a class="navbar-brand" href="index.html"></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
@@ -113,33 +111,90 @@
 				background-size: cover;" data-stellar-background-ratio="0.6">
 
 		<div class="slant"></div>
-	</section> -->
-	<section id="fh5co-home" data-section="home" style="
-	background: url('images/hero.png') no-repeat; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;" data-stellar-background-ratio="0.6">
+
+		
+	</section> 
+	
+	<!--section id="fh5co-home" data-section="home" data-stellar-background-ratio="0.6">
+		<style scoped>
+			.triangle{
+				background: url('images/horizontalsplash.png') no-repeat; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover; 
+			}
+		</style-->
+	<!--section id="fh5co-home" data-section="home" style="
+		background: url('images/hero.png') no-repeat center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;" data-stellar-background-ratio="0.6"-->
+	<style>
+		.triangle{
+			background: url('images/hero.png') no-repeat; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover; 
+		}
+		@media screen and (max-width: 768px) {
+			.triangle{
+				background: url('images/horizontalsplash.png') no-repeat;
+			}
+		}			
+	</style>
+	
+	<section class="triangle" id="fh5co-home" data-section="home" data-stellar-background-ratio="0.6">
+			<style>
+					.triangle{
+						background: url('images/hero.png') no-repeat; 
+						-webkit-background-size: cover;
+						-moz-background-size: cover;
+						-o-background-size: cover;
+						background-size: cover; 
+					}
+					@media screen and (max-width: 768px) {
+						.triangle{
+							background: url('images/horizontalsplash.png') no-repeat;
+						}
+					}			
+				</style>
+		<style>
+		.triangle{
+			background: url('images/hero.png') no-repeat; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover; 
+		}
+		@media screen and (max-width: 768px) {
+			.triangle{
+				background: url('images/horizontalsplash.png') no-repeat;
+			}
+		}			
+	</style>
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
-							<img src="images/McHacksV.svg" alt="Image" class="img-responsive" style="display: block;
-							margin: auto; padding-bottom: 5px;">
-						</div>
-						<div class="col-md-8 col-md-offset-2">
-							<h2 class="to-animate">February 3-4th 2018</h2>
-						</div>
+							<div class="scale">
+								<img src="images/McHacksVFeb.svg" srcset="images/McHacksVFeb.svg 1500w,  images/McHacksVFeb.svg 1500w" alt="Image"  class="img-responsive" style="display: block;
+								margin: auto; padding-bottom: 5px;">
+							</div>
+						</div>							
+						<!--div class="col-md-8 col-md-offset-2">
+							<h2 class="to-animate" style="margin: auto;">February 3-4th 2018</h2>
+						</div-->
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="slant"></div>
 	</section>
-
-
 	<!-- background-position: -25px -25px -->
 	<!--section id="fh5co-intro">
 				<div class="container">

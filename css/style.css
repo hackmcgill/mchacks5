@@ -238,6 +238,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
 }
 #fh5co-header .navbar {
   padding-bottom: 0;
@@ -249,6 +250,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   font-size: 19px;
   font-weight: 300;
+  text-align: right;
 }
 #fh5co-header #navbar li a span {
   position: relative;
@@ -372,6 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
+  background-image: 'images/hero.png';
   position: relative;
   width: 100%;
   background-color: #ffffff;
@@ -542,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9;
 }
 #fh5co-intro .fh5co-block:hover > .fh5co-text, #fh5co-intro .fh5co-block:focus > .fh5co-text {
-  color: #fff;
+  color: #636363;
 }
 #fh5co-intro .fh5co-block:hover > .fh5co-text .fh5co-intro-icon, #fh5co-intro .fh5co-block:focus > .fh5co-text .fh5co-intro-icon {
   color: #fff;
@@ -1166,7 +1169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fh5co-nav-toggle.active i {
-  background: transparent;
+  background: #636363;
 }
 
 .fh5co-nav-toggle.active i::before {
