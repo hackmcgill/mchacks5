@@ -1413,7 +1413,7 @@ h1, h2, h3, h4, h5, h6 {
   margin:10px; 
 }
 .platinum {
-  flex-basis: 45%;
+  flex-basis: 50%;
   align-self: center;
   padding: 2.5%;
 }
