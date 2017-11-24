@@ -5,8 +5,17 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69494366-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-69494366-4');
+	</script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>McHacks</title>
@@ -67,9 +76,7 @@
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
 					<!-- Mobile Toggle Menu Button -->
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					    aria-controls="navbar">
-					</a>
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 					<a class="navbar-brand" href="index.html"></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
@@ -113,33 +120,92 @@
 				background-size: cover;" data-stellar-background-ratio="0.6">
 
 		<div class="slant"></div>
-	</section> -->
-	<section id="fh5co-home" data-section="home" style="
-	background: url('images/hero.png') no-repeat; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;" data-stellar-background-ratio="0.6">
+
+		
+	</section> 
+	
+	<!--section id="fh5co-home" data-section="home" data-stellar-background-ratio="0.6">
+		<style scoped>
+			.triangle{
+				background: url('images/horizontalsplash.png') no-repeat; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover; 
+			}
+		</style-->
+	<!--section id="fh5co-home" data-section="home" style="
+		background: url('images/hero.png') no-repeat center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;" data-stellar-background-ratio="0.6"-->
+	<style>
+		.triangle{
+			background: url('images/hero.png') no-repeat; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover; 
+		}
+		@media screen and (max-width: 768px) {
+			.triangle{
+				background: url('images/horizontalsplash.png') no-repeat;
+			}
+		}			
+	</style>
+	
+	<section class="triangle" id="fh5co-home" data-section="home" data-stellar-background-ratio="0.6">
+	<style>
+		.triangle{
+			background: url('images/hero.png') no-repeat; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover; 
+		}
+		@media screen and (max-width: 768px) {
+			.triangle{
+				background: url('images/horizontalsplash.png') no-repeat;
+			}
+			.martlet{
+ 			   width: 440px;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			.triangle{
+				background: url('images/mobilesplash.png') no-repeat;
+			}
+			.martlet{
+				width: 240px;
+			}
+		}	
+	</style>
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
-							<img src="images/McHacksV.svg" alt="Image" class="img-responsive" style="display: block;
-							margin: auto; padding-bottom: 5px;">
+							<div class="scale">
+								<img class="martlet" src="images/McHacksVFeb.svg" srcset="images/McHacksVFeb.svg 1500w,  images/McHacksVFeb.svg 1500w" alt="Image"  class="img-responsive" style="display: block;
+								margin: auto; padding-bottom: 30px;">
+							</div>
 						</div>
-						<div class="col-md-8 col-md-offset-2">
-							<h2 class="to-animate">February 3-4th 2018</h2>
+						<div class="applyBtn">
+							<form action="https://registration.mchacks.ca">
+								<input class="btn btn-primary btn-xl" value="Apply Now" width: "20em"; height: "1.5em" type="submit">
+							</form>
 						</div>
+						<!--div class="col-md-8 col-md-offset-2">
+							<h2 class="to-animate" style="margin: auto;">February 3-4th 2018</h2>
+						</div-->
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="slant"></div>
 	</section>
-
-
 	<!-- background-position: -25px -25px -->
 	<!--section id="fh5co-intro">
 				<div class="container">
@@ -346,125 +412,26 @@
 	</section-->
 
 
-	<section id="fh5co-services" data-section="applications">
+	<!-- <section id="fh5co-services" data-section="applications">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-left">
 					<h2 class=" left-border to-animate">Applications</h2>
 					<div class="row">
 						<div class="col-md-8 subtext to-animate">
-							<h3>We know you're excited to apply for McHacks 2018. The applications will be opening very soon so stay tuned. Sign up
-								here to get an email as soon as we open applications!</h3>
+							<h3>Applications are now open for McHacks 2018!</h3>
 
-							<!-- Begin MailChimp Signup Form -->
-							<link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-							<style type="text/css">
-								#mc_embed_signup {
-									background: #f9f9f9;
-									clear: left;
-
-									/* font: 14px Helvetica, Arial, sans-serif; */
-								}
-
-								#mc_embed_signup p {
-									color: black;
-
-									/* font: 14px Helvetica, Arial, sans-serif; */
-								}
-								/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-							</style>
-							<div id="mc_embed_signup" class="to-animate">
-								<form style="padding-left: 0px;" action="https://mchacks.us12.list-manage.com/subscribe/post?u=daca896c9229eac78a0cc3810&amp;id=fba917876d"
-								    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
-								    novalidate>
-									<div id="mc_embed_signup_scroll">
-										<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required style="color: #636363">
-										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-										<div style="position: absolute; left: -5000px;" aria-hidden="true">
-											<input type="text" name="b_daca896c9229eac78a0cc3810_fba917876d" tabindex="-1" value="">
-										</div>
-										<div class="clear">
-											<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-										</div>
-									</div>
+							<div class="applyBtn">
+								<form action="https://registration.mchacks.ca">
+									<input class="btn btn-primary btn-xl" value="Apply Now" width: "20em";  height: "2em" type="submit">
 								</form>
 							</div>
-
-							<!--End mc_embed_signup-->
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person1.jpg" alt="Image"></figure>
-						<h3>Jean Smith</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person2.jpg" alt="Image"></figure>
-						<h3>Rob Smith</h3>
-						<span class="fh5co-position">Web Developer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person3.jpg" alt="Image"></figure>
-						<h3>Larry Ben</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!--div class="row">
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-anchor"></i>
-					<h3>Brand &amp; Strategy</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-layers2"></i>
-					<h3>Web &amp; Interface</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
-				
-				<div class="clearfix visible-sm-block"></div>
-				
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-video2"></i>
-					<h3>Photo &amp; Video</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-monitor"></i>
-					<h3>CMS &amp; eCommerce</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
-				
-			</div-->
 		</div>
-	</section>
+	</section> -->
 
 	<section id="fh5co-about" data-section="faqs">
 		<div class="fh5co-overlay"></div>
@@ -553,6 +520,13 @@
 			<div class="col-md-12 section-heading text-center to-animate">
 				<h2>Our Partners</h2>
 				<div class="sponsor to-animate">
+					<div class="platinum">
+						<a href="https://http://thinkingcapital.ca" target="_blank">
+							<img src="images/sponsors/thinkingcapital.png" alt="Image" class="img-responsive">
+						</a>
+					</div>
+				</div>
+				<div class="sponsor to-animate">
 					<div class="gold">
 						<a href="https://www.nuance.com" target="_blank">
 							<img src="images/sponsors/nuance.png" alt="Image" class="img-responsive">
@@ -585,6 +559,16 @@
 					<div class="bronze">
 						<a href="https://1password.com" target="_blank">
 							<img src="images/sponsors/1password.png" alt="Image" class="img-responsive">
+						</a>
+					</div>
+					<div class="bronze">
+						<a href="http://get.tech" target="_blank">
+							<img src="images/sponsors/dottech.png" alt="Image" class="img-responsive">
+						</a>
+					</div>
+					<div class="bronze">
+						<a href="https://www.facebook.com/pg/MiltonBcafeteriaurbaine" target="_blank">
+							<img src="images/sponsors/miltonb.png" alt="Image" class="img-responsive">
 						</a>
 					</div>
 				</div>
